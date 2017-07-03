@@ -170,6 +170,10 @@ public class Scanners {
                 default:
                     last = i;
             }
+            if (c > '\u009F') {
+                last--;
+                break;
+            }
         }
         return last;
     }
